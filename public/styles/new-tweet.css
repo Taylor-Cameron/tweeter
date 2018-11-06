@@ -31,3 +31,6 @@ section textarea {
 section span.counter {
   float: right;
 }
+.negative {
+  color: red;
+}
