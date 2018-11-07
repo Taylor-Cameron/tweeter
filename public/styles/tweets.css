@@ -5,6 +5,7 @@ article.tweet {
   padding-bottom: 1px;
   border: solid thin;
   border-color: rgb(206, 203, 203);
+  filter: opacity(80%);
 }
 
 article.tweet header {
@@ -50,4 +51,23 @@ article.tweet footer p {
   margin-left: 10px;
   margin-bottom: 5px;
   margin-top: 5px;
+  width: 320px;
+}
+
+article.tweet footer div {
+  float: right;
+  margin-right: 2px;
+}
+
+.hide {
+  display: none;
+}
+
+article.tweet:hover {
+  border-color: #244751;
+  transform: scale(1.01);
+  filter: opacity(110%);
+}
+article.tweet:hover .hide {
+  display: inline;
 }

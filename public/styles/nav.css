@@ -2,6 +2,7 @@
   height: 80px;
   background-color: #00a087;
   position: sticky;
+  z-index: 1;
   top: 0px;
 
 }
