@@ -34,3 +34,18 @@ section span.counter {
 .negative {
   color: red;
 }
+
+section p.empty-error.negative {
+  padding-left: 20px
+}
+
+section p.char-max-error.negative {
+  padding-left: 20px;
+}
+.show {
+  display: inline;
+}
+
+.hide {
+  display: none;
+}

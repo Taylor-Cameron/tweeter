@@ -59,6 +59,8 @@ article.tweet footer {
 }
 
 article.tweet p {
+  width: 100%;
+  word-wrap: break-word;
   padding-left: 5px;
   padding-right: 5px;
   background-color: #ffffff;

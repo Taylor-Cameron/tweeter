@@ -3,6 +3,7 @@
  * jQuery is already loaded
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
+
 const tweetData = [
   {
     'user': {
@@ -52,6 +53,7 @@ const tweetData = [
 ];
 
 $(document).ready(function () {
+
   function createTweetElement (tweets) {
     let $tweet = $('<article>')
       .addClass('tweet')
@@ -73,7 +75,7 @@ $(document).ready(function () {
           .addClass('hide')
           .text('🍄 💖 🐥'))
         .append($('<p>')
-          .text(tweets.created_at)));
+          .text(moment(tweets.created_at).fromNow())));
     return $tweet;
   }
 
@@ -87,20 +89,29 @@ $(document).ready(function () {
   renderTweet(tweetData);
 
   function tweetSubmitted() {
-    var $button = $('#submitButton');
+    var $button = $('#submit');
     $button.on('click', function(event) {
       event.preventDefault();
       let text = $('#text').val();
-      $.ajax(
-        '/tweets', {
-          method: 'post',
-          data: 'text=' + text});
       if(text === '' || text === null) {
-        alert('Error: tweet is not defined');
+        $('.char-max-error.negative').slideUp();
+        $('.empty-error.negative').slideDown();
       } else if (text.length > 140) {
-        alert('Error: tweet is too many characters');
+        $('.empty-error.negative').slideUp();
+        $('.char-max-error.negative').slideDown();
       } else {
-        loadTweets();
+        $('.empty-error.negative').slideUp();
+        $('.char-max-error.negative').slideUp();
+        $.ajax(
+          '/tweets', {
+            method: 'post',
+            data: 'text=' + text,
+            complete: function() {
+              $('#text').val('');
+              $('.counter')[0].innerHTML = '140';
+              loadTweets();
+            }
+          });
       }
     });
   }
@@ -112,4 +123,9 @@ $(document).ready(function () {
         $('#tweets-container').prepend(createTweetElement(tweets.pop()));
       });
   }
+
+  $('.compose').click(function () {
+    $('.new-tweet').toggle('fast');
+    $('#text').focus();
+  });
 });
