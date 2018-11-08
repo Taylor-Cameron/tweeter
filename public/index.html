@@ -27,121 +27,20 @@
     <nav id="nav-bar">
         <img class="logo" src="/images/bird.png">
         <span class="header">Tweeter</span>
+        <button class="compose">✎ Compose</button>
     </nav>
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
-        <form action="./tweets" method="POST">
+        <form action="/tweets" method="post">
           <textarea id="text" placeholder="What are you humming about?"></textarea>
-          <input type="submit" value="Tweet">
+          <input id ='submitButton' type="submit" value="Tweet">
           <span class="counter">140</span>
         </form>
+        </section>
+      <section id='tweets-container' class="container">
       </section>
-      <article class="tweet">
-        <header>
-          <img class="avatar" src="/images/bird.png">
-          <h2 class="username">Joel Man</h2>
-          <div class="userHandle">@Joelly</div>
-        </header>
-        <body>
-          <p>THis is a test tweet, to see what the box does when the tweet is long.</p>
-        </body>
-        <footer>
-          <div name="buttons" class="hide">🍄 💖 🐥</div>
-          <p>10 days ago</p>
-        </footer>
-      </article>
-      <article class="tweet">
-        <header>
-          <img class="avatar" src="/images/bird.png">
-          <h2 class="username">Joel Man</h2>
-          <div class="userHandle">@Joelly</div>
-        </header>
-
-        <body>
-          <p>THis is a test tweet, to see what the box does when the tweet is long.</p>
-        </body>
-        <footer>
-          <div name="buttons" class="hide">🍄 💖 🐥</div>
-          <p>10 days ago</p>
-        </footer>
-      </article>
-      <article class="tweet">
-        <header>
-          <img class="avatar" src="/images/bird.png">
-          <h2 class="username">Joel Man</h2>
-          <div class="userHandle">@Joelly</div>
-        </header>
-
-        <body>
-          <p>THis is a test tweet, to see what the box does when the tweet is long.</p>
-        </body>
-        <footer>
-          <div name="buttons" class="hide">🍄 💖 🐥</div>
-          <p>10 days ago</p>
-        </footer>
-      </article>
-      <article class="tweet">
-        <header>
-          <img class="avatar" src="/images/bird.png">
-          <h2 class="username">Joel Man</h2>
-          <div class="userHandle">@Joelly</div>
-        </header>
-
-        <body>
-          <p>THis is a test tweet, to see what the box does when the tweet is long.</p>
-        </body>
-        <footer>
-          <div name="buttons" class="hide">🍄 💖 🐥</div>
-          <p>10 days ago</p>
-        </footer>
-      </article>
-      <article class="tweet">
-        <header>
-          <img class="avatar" src="/images/bird.png">
-          <h2 class="username">Joel Man</h2>
-          <div class="userHandle">@Joelly</div>
-        </header>
-
-        <body>
-          <p>THis is a test tweet, to see what the box does when the tweet is long.</p>
-        </body>
-        <footer>
-          <div name="buttons" class="hide">🍄 💖 🐥</div>
-          <p>10 days ago</p>
-        </footer>
-      </article>
-      <article class="tweet">
-        <header>
-          <img class="avatar" src="/images/bird.png">
-          <h2 class="username">Joel Man</h2>
-          <div class="userHandle">@Joelly</div>
-        </header>
-
-        <body>
-          <p>THis is a test tweet, to see what the box does when the tweet is long.</p>
-        </body>
-        <footer>
-          <div name="buttons" class="hide">🍄 💖 🐥</div>
-          <p>10 days ago</p>
-        </footer>
-      </article>
-      <article class="tweet">
-        <header>
-          <img class="avatar" src="/images/bird.png">
-          <h2 class="username">Joel Man</h2>
-          <div class="userHandle">@Joelly</div>
-        </header>
-
-        <body>
-          <p>THis is a test tweet, to see what the box does when the tweet is long.</p>
-        </body>
-        <footer>
-          <div name="buttons" class="hide">🍄 💖 🐥</div>
-          <p>10 days ago</p>
-        </footer>
-      </article>
     </main>
     <!-- composer-char-count JS -->
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>

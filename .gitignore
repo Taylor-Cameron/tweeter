@@ -4,3 +4,4 @@ node_modules/
 package-lock.json
 launch.json
 .vscode
+node_modules
