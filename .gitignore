@@ -5,3 +5,4 @@ package-lock.json
 launch.json
 .vscode
 node_modules
+mongo_example.js
