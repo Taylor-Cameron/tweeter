@@ -29,9 +29,8 @@ $(document).ready(function () {
       .append($('<footer>')
         .append($('<div>')
           .addClass('hide')
-          .text('🍄 💖 🐥'))
-        .append($('<p>')
-          .text(moment(tweets.created_at).fromNow())));
+          .text('🏳️ 💖 🐥'))
+        .append($('<p>').text(moment(tweets.created_at).fromNow())));
     return $tweet;
   }
   /*
