@@ -1,0 +1,53 @@
+section {
+  margin: 20px;
+  background-color: rgb(243, 243, 243);
+  border-radius: 6px;
+  padding-bottom: 1px;
+  padding-block-start: 1px;
+  border: solid thin;
+  border-color: rgb(218, 214, 214);
+
+  h2 {
+    margin-left: 16px;
+    margin-top: 8px;
+    margin-right: 16px;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+  }
+
+  form {
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    padding-block-start: 5px;
+    padding-inline-start: 5px;
+  }
+
+  span.counter {
+    float: right;
+  }
+
+  p.empty-error.negative {
+    padding-left: 20px
+  }
+
+  p.char-max-error.negative {
+    padding-left: 20px;
+  }
+}
+/* extra classes used for added design on select information*/
+.negative {
+  color: red;
+}
+
+.show {
+  display: inline;
+}
+
+.hide {
+  display: none;
+}

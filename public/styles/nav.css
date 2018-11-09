@@ -1,16 +1,10 @@
-
-/*
-Css for the nav bar
-*/
 #nav-bar {
   height: 80px;
   background-color: #00a087;
   position: sticky;
   z-index: 1;
   top: 0px;
-
 }
-
 #nav-bar button {
   float: right;
   margin-top: 10px;
@@ -22,14 +16,11 @@ Css for the nav bar
   color: #00a087;
   filter: opacity(90%);
 }
-
 #nav-bar .compose:hover {
   color: black;
   filter: opacity(100%);
   transform: scale(1.02);
 }
-
-
 #nav-bar .logo {
   height: 80px;
   width: 80px;
@@ -42,3 +33,5 @@ Css for the nav bar
   float: left;
   line-height: 80px;
 }
+
+/*# sourceMappingURL=nav.css.map */

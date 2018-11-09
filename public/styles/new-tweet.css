@@ -1,16 +1,12 @@
-/*
-css used to render the new-tweet area
-*/
 section {
   margin: 20px;
-  background-color: rgb(243, 243, 243);
+  background-color: #f3f3f3;
   border-radius: 6px;
   padding-bottom: 1px;
   padding-block-start: 1px;
   border: solid thin;
-  border-color: rgb(218, 214, 214);
+  border-color: #dad6d6;
 }
-
 section h2 {
   margin-left: 16px;
   margin-top: 8px;
@@ -18,33 +14,31 @@ section h2 {
   border-bottom-style: solid;
   border-bottom-width: thin;
 }
-
 section form {
   margin-left: 1em;
   margin-right: 1em;
   margin-bottom: 10px;
 }
-
 section textarea {
   width: 100%;
   padding-block-start: 5px;
   padding-inline-start: 5px;
 }
-
 section span.counter {
   float: right;
 }
+section p.empty-error.negative {
+  padding-left: 20px;
+}
+section p.char-max-error.negative {
+  padding-left: 20px;
+}
+
+/* extra classes used for added design on select information*/
 .negative {
   color: red;
 }
 
-section p.empty-error.negative {
-  padding-left: 20px
-}
-
-section p.char-max-error.negative {
-  padding-left: 20px;
-}
 .show {
   display: inline;
 }
@@ -52,3 +46,5 @@ section p.char-max-error.negative {
 .hide {
   display: none;
 }
+
+/*# sourceMappingURL=new-tweet.css.map */

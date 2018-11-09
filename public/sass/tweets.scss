@@ -1,0 +1,95 @@
+#tweets-container {
+  margin: 0px auto;
+  border: none;
+  padding-top: 0px;
+}
+
+/*
+used to render individual tweet view
+*/
+
+article.tweet {
+  margin: 20px;
+  background-color: #ffffff;
+  border-radius: 6px;
+  padding-bottom: 1px;
+  border: solid thin;
+  border-color: #cecbcb;
+  filter: opacity(80%);
+
+  header {
+    background-color: #f3f3f3;
+    width: 100%;
+    height: 40px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+
+    img {
+      float: left;
+      margin-left: 10px;
+      margin-right: 5px;
+      margin-top: 5px;
+      height: 30px;
+      width: 30px;
+    }
+  }
+
+  h2.username {
+    margin-left: 5px;
+    font-size: 20px;
+    margin-top: 5px;
+    float: left;
+    width: 250px;
+    border-bottom-style: none;
+  }
+
+  div.userHandle {
+    float: right;
+    font-size: 12px;
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+
+  footer {
+    border-top-style: solid;
+    border-top-width: thin;
+    border-top-color: #cecbcb;
+  }
+
+  p {
+    width: 100%;
+    word-wrap: break-word;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #ffffff;
+  }
+
+  footer {
+
+    p {
+      font-size: 12px;
+      margin-left: 10px;
+      margin-bottom: 5px;
+      margin-top: 5px;
+      width: 320px;
+    }
+
+    div {
+      float: right;
+      margin-right: 2px;
+    }
+  }
+}
+/* toggles the opacity and display of like, retweet, and flag buttons*/
+.hide {
+  display: none;
+}
+
+article.tweet:hover {
+  border-color: #244751;
+  transform: scale(1.01);
+  filter: opacity(110%);
+}
+article.tweet:hover .hide {
+  display: inline;
+}

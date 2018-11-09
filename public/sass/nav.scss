@@ -1,0 +1,39 @@
+#nav-bar {
+  height: 80px;
+  background-color: #00a087;
+  position: sticky;
+  z-index: 1;
+  top: 0px;
+
+  button {
+    float: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 40px;
+    height: 57px;
+    border-color: black;
+    border-radius: 6px;
+    color: #00a087;
+    filter: opacity(90%);
+  }
+
+  .compose:hover {
+    color: black;
+    filter: opacity(100%);
+    transform: scale(1.02);
+  }
+
+  .logo {
+    height: 80px;
+    width: 80px;
+    float: left;
+    margin-left: 2rem;
+  }
+
+  .header {
+    color: #e8fdff;
+    font-size: 32px;
+    float: left;
+    line-height: 80px;
+  }
+}

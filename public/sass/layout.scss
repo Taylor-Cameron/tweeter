@@ -6,7 +6,6 @@
 html {
   box-sizing: border-box;
 }
-
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -17,7 +16,7 @@ html {
 body {
   margin: 0;
   background: url(/images/background.jpg);
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 main {
@@ -26,5 +25,3 @@ main {
   padding-block-start: 140px;
   padding-block-end: 140px;
 }
-
-/*# sourceMappingURL=layout.css.map */
