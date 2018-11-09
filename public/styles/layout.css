@@ -16,7 +16,8 @@ html {
  */
 body {
   margin: 0;
-  background: url(/images/background.jpg);
+  background-attachment: fixed;
+  background-image: url(/images/background.jpg);
   font-family: "Roboto Condensed", sans-serif;
 }
 
