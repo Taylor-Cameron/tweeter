@@ -1,3 +1,7 @@
+/*
+creates a dynamic characte counter for the textarea
+returns negative number in red if over character limit
+*/
 $(document).ready(function () {
   var counter = parseInt($('.counter')[0].innerHTML);
   document.addEventListener('keyup', function(event) {
