@@ -26,4 +26,4 @@ the purpose of this project was to fork and clone lighthouselabs starter reposit
 
 ## screenshots
 
-!["Screenshot of singlepage tweeter project"](/Users/taylorcameron/lighthouse/lighthouseAssignments/Week_3/tweeter_project/tweeter-project.jpg)
+!["Screenshot of singlepage tweeter project"](/Users/taylorcameron/lighthouse/lighthouseAssignments/Week_3/tweeter_project/tweeter-project.png)
