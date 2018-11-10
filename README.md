@@ -24,6 +24,10 @@ the purpose of this project was to fork and clone lighthouselabs starter reposit
 - mongodb
 - sass
 
+## use
+  this is a single page app, that allows the user to create tweets based on imput in a compose tweet textarea, which randomly generates a user and posts the tweets below for viewing.
+
+  there is a compose button located in the nav bar which allows for the user to toggle to view of the new tweet area.
 ## screenshots
 
 !["Screenshot of singlepage tweeter project"](tweeter-project.png)
